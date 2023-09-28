@@ -112,7 +112,7 @@ body {
     margin-bottom: 0.5em;
   }
   .header-links {
-    color: white;
+    color: var(--primary);
     margin: 1em 1em 0em;
     width: fit-content;
     background-color: transparent;
@@ -204,7 +204,7 @@ body {
     font-size: calc(1rem + 4vw);
     margin: 1em 0 1em;
     color: #ffffff;
-    text-shadow: 0 0 20px rgba(0, 0, 0, 1);
+    text-shadow: 0 0 20px var(--text);
   }
   .services-container {
     transform: rotateZ(-8deg);
@@ -265,8 +265,9 @@ body {
     left: 0;
   }
   & button {
-    color:#000000;
-    background-color: white;
+    z-index: 1200;
+    color:var(--text);
+    background-color: var(--primary);
     border: 3px solid var(--text);
     padding: 0.2em 0.4em 0.2em;
   }
