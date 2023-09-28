@@ -265,6 +265,7 @@ body {
     left: 0;
   }
   & button {
+    color:#000000;
     background-color: white;
     border: 3px solid var(--text);
     padding: 0.2em 0.4em 0.2em;
