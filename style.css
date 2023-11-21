@@ -54,7 +54,7 @@ body {
   left: 0;
   position: fixed;
   display: flex;
-  font-size: calc(1rem + 1.5vw);
+  font-size: calc(1rem + 1vw);
   z-index: 1000;
   gap: 0.5em;
   .fa {
