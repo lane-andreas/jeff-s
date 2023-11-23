@@ -13,25 +13,15 @@
     />
     <meta name="author" content="Lane Andreas" />
     <title>Jeff's Plumbing</title>
-    <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
-      rel="stylesheet"
-      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
-      crossorigin="anonymous"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
-    />
+
     <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://api.fontshare.com/v2/css?f[]=oswald@1&f[]=erode@1&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poller+One&family=Pontano+Sans&display=swap"
       rel="stylesheet"
     />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-    />
+
     <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png" />
     <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png" />
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
@@ -54,165 +44,197 @@
     gtag("config", "G-51XTW226FQ");
   </script>
   <body>
-    <header id="home" class="home min-size">
-      <a href="#about"><i class="bi bi-mouse"></i></a>
-      <div
-        class="home-container justify-content-center row"
-        role="img"
-        aria-label="Owner working on plumbing project"
-      >
-        <h1 class="justify-content-center row">
-          A FAMILY-OWNED PLUMBING BUSINESS IN THE TRI-CITY AREA
-        </h1>
-        <p class="row justify-content-center">
-          Professional Plumbing Installations and Repairs
-        </p>
-        <div class="header-buttons justify-content-center row">
-          <a class="header-links" href="#contact">Contact Us</a
-          ><a class="header-links" href="#areas">Service Areas</a>
-        </div>
+    <nav>
+      <div class="socials">
+        <a href=""
+          ><iconify-icon inline icon="mdi:facebook-box"></iconify-icon></a
+        ><a href=""
+          ><iconify-icon inline icon="uil:instagram-alt"></iconify-icon
+        ></a>
+      </div>
+      <a class="nav-toggle" onclick="toggleNavHeight()">menu</a>
+      <a href="#about" class="nav-link">about</a>
+      <a href="#services" class="nav-link">services</a>
+      <a href="#testimonials" class="nav-link">testimonials</a>
+      <a href="#areas" class="nav-link">areas</a>
+      <a href="#contact" class="nav-link">contact</a>
+    </nav>
+    <header>
+      <div class="content">
+        <h1>Jeff's Plumbing</h1>
+        <p>serving our community for 20 years</p>
+        <a href="#contact"
+          >Free Estimate<iconify-icon
+            inline
+            icon="material-symbols-light:arrow-right-alt-rounded"
+          ></iconify-icon
+        ></a>
+        <img src="imgs/Image01.webp" alt="" />
       </div>
     </header>
-    <nav id="navbar" class="navbar navbar-expand-lg sticky-top">
-      <div class="container-fluid">
-        <div class="navbar-brand">Jeff's Plumbing</div>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div
-          class="collapse navbar-collapse justify-content-end"
-          id="navbarNavAltMarkup"
-        >
-          <div class="navbar-nav">
-            <a class="nav-link" href="#home">Home</a>
+    <section id="about">
+      <div class="content">
+        <div>
+          <h2 class="scroll-fade">We care about our work</h2>
+          <p class="scroll-fade">
+            At Jeff's Plumbing, we believe in more than just fixing pipes - we
+            believe in enhancing lives. Whether it's a simple repair, a complex
+            remodel, or new construction projects, our team approaches every job
+            with precision, professionalism, and a friendly touch.
+          </p>
+        </div>
+        <div>
+          <h2 class="scroll-fade">It's in the family</h2>
+          <p class="scroll-fade">
+            Built on hard work and integrity, our team is dedicated to quality
+            craftsmanship. When you choose us, you're inviting a family into
+            your home - one committed to reliability and exceeding expectations.
+            Expect exceptional service tailored to your needs, because when you
+            choose us, you're becoming part of the Jeff's Plumbing family.
+          </p>
+        </div>
+        <img src="imgs/Image02.webp" alt="" />
+      </div>
+    </section>
+    <section id="services">
+      <div class="content">
+        <div>
+          <h3>Your water solutions</h3>
+          <p>All in one place</p>
+        </div>
+        <div class="container">
+          <img src="imgs/OtherImage03.webp" alt="" />
+          <div class="service">
+            <strong>Repair Water</strong>
+            <p class="scroll-slide-left scroll-slide">
+              From dripping faucets to burst pipes, count on us<br />
+              for prompt solutions to restore your plumbing.
+            </p>
+          </div>
 
-            <a class="nav-link" href="#about">About</a>
-            <a class="nav-link" href="#services">Services</a>
-            <a class="nav-link" href="#areas">Areas</a>
-            <a class="nav-link" href="#contact">Contact</a>
+          <div class="service">
+            <strong>Remodel</strong>
+            <p class="scroll-slide-right scroll-slide">
+              From updating bathrooms to entire home transformations,<br />
+              we seamlessly integrate plumbing changes,<br />
+              turning your vision into reality.
+            </p>
+          </div>
+          <div class="service">
+            <strong>Well Work</strong>
+            <p class="scroll-slide-left scroll-slide">
+              From pump installations to water quality testing, we offer
+              reliable solutions<br />
+              for a continuous and clean water supply.
+            </p>
+          </div>
+          <div class="service">
+            <strong>Gaslines</strong>
+            <p class="scroll-slide-right scroll-slide">
+              From connecting appliances to emergency repairs, we ensure
+              compliance<br />
+              with regulations for a secure energy supply.
+            </p>
+          </div>
+          <img src="imgs/OtherImage04.webp" alt="" />
+          <img src="imgs/OtherImage01.webp" alt="" />
+          <div class="service">
+            <strong>New Construction</strong>
+            <p class="scroll-slide-left scroll-slide">
+              Our tailored plumbing services for new construction projects,<br />
+              from design to installation,<br />
+              ensure top-notch expertise for your property.
+            </p>
           </div>
         </div>
       </div>
-    </nav>
-    <div class="socials">
-      <a
-        href="https://www.facebook.com/profile.php?id=100093981273518"
-        class="fa fa-facebook"
-        target="_blank"
-      ></a>
-      <a
-        href="https://www.instagram.com/jeffsplumbingservice/"
-        class="fa fa-instagram"
-        target="_blank"
-      ></a>
-    </div>
-    <section id="about" class="about min-size">
-      <div class="about-container justify-content-around row">
-        <div class="about-text col-md-10 col-lg-3">
-          <div
-            class="img img-1"
-            role="img"
-            aria-label="young man replacing pipes"
-          ></div>
-          <h2>EXPERTISE</h2>
-          <p>
-            At Jeff's Plumbing, we take pride in our expertise and commitment to
-            quality service. With years of experience under our belt, we tackle
-            plumbing challenges efficiently and effectively.
-          </p>
+    </section>
+    <section id="testimonials">
+      <div class="circle"><div class="wave"></div></div>
+      <div class="content">
+        <div>
+          <div>
+            <h4>Our Testimonials say it all</h4>
+            <p>And a little more</p>
+          </div>
+
+          <div class="container">
+            <div class="testimonial">
+              <div class="person scroll-fade">Bridget Marie Guerra</div>
+              <p class="scroll-fade">
+                Highly recommend! We have worked with Daniel for many years. He
+                is professional, knowledgeable, efficient and very good at doing
+                whatever needs to be done to complete the job. He helped my dad
+                out over the years, often at the last minute. My dad always
+                spoke highly of Daniel and was impressed with how well he did
+                his job, and was personable as well. He recently completed work
+                for us and I would say look no further if you want the very
+                BEST. 5/5 stars!!
+              </p>
+            </div>
+            <div class="testimonial">
+              <div class="person scroll-fade">Aaron Cowan</div>
+              <p class="scroll-fade">
+                These guys are great. Daniel not only was the best price/value
+                compared to others but he was able to get the job done with
+                short notice. He came back several times to check and make sure
+                I didn't have any further problems. Great customer service. I
+                highly recommend.
+              </p>
+            </div>
+            <div class="testimonial">
+              <div class="person scroll-fade">Roger F</div>
+              <p class="scroll-fade">
+                I had a pressure tank that needed replaced in a remote location.
+                Daniel responded THE SAME DAY! He and his cohort installed new
+                controls and fittings so that I will be able to replace the tank
+                myself rather easily. I would highly recommend Jeff's. Punctual,
+                reasonably priced and very courteous.
+              </p>
+            </div>
+          </div>
         </div>
-        <div class="about-text col-md-10 col-lg-3">
-          <div
-            class="img img-2"
-            role="img"
-            aria-label="young man smiling in front of rv trailer"
-          ></div>
-          <h3>SATISFACTION</h3>
-          <p>
-            Customer satisfaction is at the heart of everything we do. From
-            small repairs to complex installations, we take pride in our
-            craftsmanship and deliver results that consistently exceed
-            expectations.
-          </p>
-        </div>
-        <div class="about-text col-md-10 col-lg-3">
-          <div
-            class="img img-3"
-            role="img"
-            aria-label="small team working on plumbing project"
-          ></div>
-          <h4>RESULTS</h4>
-          <p>
-            Reliability is our promise - count on us to be there when you need
-            us most. Our team of skilled plumbers is dedicated to providing
-            reliable and timely solutions for your every plumbing need.
-          </p>
+      </div>
+      <div class="circle flip"><div class="wave"></div></div>
+    </section>
+    <section id="areas">
+      <div class="content">
+        <h5>Where are we?</h5>
+        <p>View our locations here</p>
+        <div class="container">
+          <div>
+            <a href="">Moore</a><a href="">Oklahoma City</a
+            ><a href="">Edmond</a>
+          </div>
+          <div>
+            <a href="">Tuttle</a><a href="">Newcastle</a><a href="">Norman</a>
+          </div>
+          <div>
+            <a href="">Purcell</a><a href="">Paul's Valley (405-238-4615)</a
+            ><a href="">Blanchard (405-361-1682)</a>
+          </div>
+
+          <img src="imgs/Image03.webp" alt="" />
         </div>
       </div>
     </section>
-    <main id="services" class="services min-size">
-      <div class="background-clip"></div>
-      <div
-        class="services-container row justify-content-center align-content-evenly"
-      >
-        <div class="row">
-          <p class="col-lg-4">Remodel</p>
-          <p class="col-lg-4">Gaslines</p>
-          <p class="col-lg-4">Well Work</p>
-        </div>
-        <div class="row">
-          <p class="col-lg-6">Repair Water</p>
-          <p class="col-lg-6">New Construction</p>
-        </div>
+    <section id="contact">
+      <div class="circle">
+        <div class="wave"></div>
       </div>
-    </main>
-    <section id="areas" class="areas min-size row justify-content-center">
-      <div
-        class="areas-container row justify-content-center align-items-center"
-      >
-        <div class="area-names col-md-10 col-lg-6 d-flex flex-wrap">
-          <h5>SERVICE AREAS</h5>
-
-          <p>Tuttle</p>
-
-          <p>Purcell</p>
-          <p>Lindsay</p>
-          <p>Norman</p>
-          <p>Moore</p>
-
-          <p>Edmond</p>
-          <p>Newcastle</p>
-          <p>Oklahoma City</p>
-          <p>Blanchard (405-361-1682)</p>
-          <p>Paul's Valley (405-238-4615)</p>
+      <div class="content">
+        <div>
+          <h6>Contact Us</h6>
+          <p>Get a free estimate today!</p>
         </div>
-        <div class="globe col-md-10 col-lg-6">
-          <a
-            href="https://www.google.com/maps/place/Jeff's+Plumbing/@35.1827349,-97.6692485,17z/data=!3m1!4b1!4m6!3m5!1s0x87b270e53bc2a071:0x307a160691c7e95e!8m2!3d35.1827305!4d-97.6666736!16s%2Fg%2F1vkxmsbx?entry=ttu"
-            ><img
-              src="Screenshot 2023-07-20 112206.png"
-              alt="map of jeff's plumbing"
-          /></a>
-        </div>
-      </div>
-    </section>
-    <footer id="contact" class="contact min-size row">
-      <div class="contact-container row">
-        <div class="form-container col-md-10 col-lg-6">
+        <div class="container">
           <form
             action="https://formsubmit.co/jeffsplumbingdm@gmail.com"
             method="POST"
           >
-            <div class="input-container">
+            <div class="input-container scroll-fade">
               <input
+                placeholder="Name"
                 type="text"
                 name="name"
                 id="name"
@@ -220,8 +242,9 @@
                 required
               /><label class="name" for="name">Name</label>
             </div>
-            <div class="input-container">
+            <div class="input-container scroll-fade">
               <input
+                placeholder="Email"
                 type="email"
                 name="email"
                 id="email"
@@ -229,49 +252,25 @@
                 required
               /><label class="form-3" for="email">Email</label>
             </div>
-            <div class="textarea-container">
-              <textarea id="message" name="message" rows="4" required></textarea
+            <div class="textarea-container scroll-fade">
+              <textarea
+                placeholder="Message"
+                id="message"
+                name="message"
+                rows="4"
+                required
+              ></textarea
               ><label for="message">Message</label>
             </div>
-            <button type="submit">Send</button>
+            <button class="scroll-fade" type="submit">Send</button>
           </form>
         </div>
-        <div class="contact-links col-md-10 col-lg-6">
-          <h6>CONTACT US</h6>
-          <p class="contact-des">
-            Contact us if you have any questions about our services, and we'll
-            get back to you as soon as possible.
-          </p>
-          <a href="mailto:jeffsplumbingdm@gmail.com"
-            ><p class="c-link">jeffsplumbingdm@gmail.com</p></a
-          >
-          <a href="tel:405-361-1682"><p class="c-link">405-361-1682</p></a>
-          <a
-            href="https://www.google.com/maps/place/Jeff's+Plumbing/@35.1827349,-97.6692485,17z/data=!3m1!4b1!4m6!3m5!1s0x87b270e53bc2a071:0x307a160691c7e95e!8m2!3d35.1827305!4d-97.6666736!16s%2Fg%2F1vkxmsbx?entry=ttu"
-            target="_blank"
-            ><p class="c-link">794 Partridge Ln Blanchard, OK 73010</p></a
-          >
-        </div>
       </div>
-    </footer>
-    <div class="actual-footer row">
-      <div class="policies col-6">
-        <a href="policies.html" target="_blank"><p>Privacy Policy</p></a>
+      <div class="circle flip clip">
+        <div class="wave"></div>
       </div>
-      <div class="rights col-6">
-        <p>
-          Created by
-          <a href="https://lane-andreas.com/" target="_blank" class="lane"
-            >Lane Andreas</a
-          >
-        </p>
-      </div>
-    </div>
-    <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-      crossorigin="anonymous"
-    ></script>
+    </section>
+    <script src="https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
