@@ -26,7 +26,9 @@ body {
   font-weight: 400;
   position: relative;
 }
-
+body {
+  overflow-y: clip;
+}
 ::-webkit-scrollbar {
   width: 0;
 }
@@ -39,14 +41,19 @@ button {
   border: inherit;
 }
 
-section {
+section,
+footer,
+header {
+  position: relative;
   background-color: var(--white);
 }
 
 nav {
+  position: relative;
   transition: 0.5s;
   z-index: 1000;
   width: 100%;
+  height: 4em;
   background-color: white;
   top: 0;
   position: fixed;
@@ -84,6 +91,8 @@ nav {
   }
   .nav-toggle {
     display: none;
+    margin: 0.6em 0;
+    cursor: pointer;
   }
 }
 
@@ -92,6 +101,7 @@ nav {
     overflow: clip !important;
     padding: 1em 2em;
     justify-content: space-between;
+    align-items: flex-start;
     .nav-toggle {
       display: initial;
     }
@@ -216,7 +226,7 @@ header {
 }
 
 .fade {
-  animation: fade 0.5s forwards;
+  animation: fade 0.3s forwards;
 }
 
 @keyframes fade {
@@ -388,7 +398,7 @@ header {
 }
 
 .circle {
-  clip-path: polygon(0% 35%, 100% 35%, 100% 65%, 0% 65%);
+  clip-path: polygon(0% 30%, 100% 30%, 100% 70%, 0% 70%);
 
   top: 0;
   z-index: -2;
@@ -651,6 +661,9 @@ header {
       margin-right: 0;
     }
   }
+  footer {
+    margin-top: 10em !important;
+  }
   h1,
   h2,
   h3,
@@ -660,4 +673,53 @@ header {
     text-align: center;
     padding: 0 3ch;
   }
+}
+
+footer {
+  margin-top: 20em;
+  font-size: var(--s);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  .content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .half {
+    height: 10em;
+    width: 50vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    padding: 2em 3em;
+    gap: 1.5em;
+  }
+
+  .half:nth-of-type(2) {
+    text-align: right;
+  }
+}
+
+@media (width < 800px) {
+  footer {
+    .content {
+      flex-direction: column-reverse;
+    }
+
+    .half {
+      height: unset;
+      width: 100vw;
+      text-align: right;
+    }
+  }
+}
+
+#testimonials-tag,
+#areas-tag,
+#contact-tag {
+  position: absolute;
+  top: 0;
+  margin-top: -7em;
 }

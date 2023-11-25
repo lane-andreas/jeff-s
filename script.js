@@ -49,9 +49,21 @@ function toggleNavHeight() {
   const navBar = document.querySelector("nav");
   const currentHeight = navBar.style.height;
 
-  if (currentHeight === "100vh" || currentHeight === "") {
-    navBar.style.height = "unset";
+  if (currentHeight === "100vh") {
+    navBar.style.height = "4em";
+    navBar.style.boxShadow = "0 0 1em rgba(0, 0, 0, 0.2)";
   } else {
     navBar.style.height = "100vh";
+    navBar.style.boxShadow = "0 0 1em rgba(0, 0, 0, 0.2)";
+  }
+}
+
+function closeNavHeight() {
+  const navBar = document.querySelector("nav");
+  const currentHeight = navBar.style.height;
+
+  if (currentHeight === "100vh") {
+    navBar.style.height = "4em";
+    navBar.style.boxShadow = "0 0 1em rgba(0, 0, 0, 0.2)";
   }
 }

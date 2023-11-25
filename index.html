@@ -46,30 +46,42 @@
   <body>
     <nav>
       <div class="socials">
-        <a href=""
+        <a
+          href="https://www.facebook.com/profile.php?id=100093981273518"
+          target="_blank"
           ><iconify-icon inline icon="mdi:facebook-box"></iconify-icon></a
-        ><a href=""
+        ><a
+          href="https://www.instagram.com/jeffsplumbingservice/"
+          target="_blank"
           ><iconify-icon inline icon="uil:instagram-alt"></iconify-icon
         ></a>
       </div>
-      <a class="nav-toggle" onclick="toggleNavHeight()">menu</a>
-      <a href="#about" class="nav-link">about</a>
-      <a href="#services" class="nav-link">services</a>
-      <a href="#testimonials" class="nav-link">testimonials</a>
-      <a href="#areas" class="nav-link">areas</a>
-      <a href="#contact" class="nav-link">contact</a>
+      <a aria-hidden="true" class="nav-toggle" onclick="toggleNavHeight()"
+        >menu</a
+      >
+      <a onclick="closeNavHeight()" href="#about" class="nav-link">about</a>
+      <a onclick="closeNavHeight()" href="#services" class="nav-link"
+        >services</a
+      >
+      <a onclick="closeNavHeight()" href="#testimonials-tag" class="nav-link"
+        >testimonials</a
+      >
+      <a onclick="closeNavHeight()" href="#areas-tag" class="nav-link">areas</a>
+      <a onclick="closeNavHeight()" href="#contact-tag" class="nav-link"
+        >contact</a
+      >
     </nav>
     <header>
       <div class="content">
         <h1>Jeff's Plumbing</h1>
         <p>serving our community for 20 years</p>
-        <a href="#contact"
+        <a href="#contact-tag"
           >Free Estimate<iconify-icon
             inline
             icon="material-symbols-light:arrow-right-alt-rounded"
           ></iconify-icon
         ></a>
-        <img src="imgs/Image01.webp" alt="" />
+        <img src="imgs/Image01.webp" alt="graphic art of community" />
       </div>
     </header>
     <section id="about">
@@ -93,7 +105,7 @@
             choose us, you're becoming part of the Jeff's Plumbing family.
           </p>
         </div>
-        <img src="imgs/Image02.webp" alt="" />
+        <img src="imgs/Image02.webp" alt="graphic art of family" />
       </div>
     </section>
     <section id="services">
@@ -103,7 +115,10 @@
           <p>All in one place</p>
         </div>
         <div class="container">
-          <img src="imgs/OtherImage03.webp" alt="" />
+          <img
+            src="imgs/OtherImage03.webp"
+            alt="graphic art of plumbing installing bath tub"
+          />
           <div class="service">
             <strong>Repair Water</strong>
             <p class="scroll-slide-left scroll-slide">
@@ -136,8 +151,14 @@
               with regulations for a secure energy supply.
             </p>
           </div>
-          <img src="imgs/OtherImage04.webp" alt="" />
-          <img src="imgs/OtherImage01.webp" alt="" />
+          <img
+            src="imgs/OtherImage04.webp"
+            alt="graphic art of plumber working on pipes"
+          />
+          <img
+            src="imgs/OtherImage01.webp"
+            alt="graphic art of plumber working on water system"
+          />
           <div class="service">
             <strong>New Construction</strong>
             <p class="scroll-slide-left scroll-slide">
@@ -150,6 +171,7 @@
       </div>
     </section>
     <section id="testimonials">
+      <div id="testimonials-tag"></div>
       <div class="circle"><div class="wave"></div></div>
       <div class="content">
         <div>
@@ -198,27 +220,48 @@
       <div class="circle flip"><div class="wave"></div></div>
     </section>
     <section id="areas">
+      <div id="areas-tag"></div>
       <div class="content">
         <h5>Where are we?</h5>
         <p>View our locations here</p>
         <div class="container">
           <div>
-            <a href="">Moore</a><a href="">Oklahoma City</a
-            ><a href="">Edmond</a>
+            <a target="_blank" href="https://maps.app.goo.gl/uVwNjDqWYvWPgnVb6"
+              >Moore</a
+            ><a target="_blank" href="https://maps.app.goo.gl/uVwNjDqWYvWPgnVb6"
+              >Oklahoma City</a
+            ><a target="_blank" href="https://maps.app.goo.gl/uVwNjDqWYvWPgnVb6"
+              >Edmond</a
+            >
           </div>
           <div>
-            <a href="">Tuttle</a><a href="">Newcastle</a><a href="">Norman</a>
+            <a target="_blank" href="https://maps.app.goo.gl/uVwNjDqWYvWPgnVb6"
+              >Tuttle</a
+            ><a target="_blank" href="https://maps.app.goo.gl/uVwNjDqWYvWPgnVb6"
+              >Newcastle</a
+            ><a target="_blank" href="https://maps.app.goo.gl/uVwNjDqWYvWPgnVb6"
+              >Norman</a
+            >
           </div>
           <div>
-            <a href="">Purcell</a><a href="">Paul's Valley (405-238-4615)</a
-            ><a href="">Blanchard (405-361-1682)</a>
+            <a target="_blank" href="https://maps.app.goo.gl/uVwNjDqWYvWPgnVb6"
+              >Purcell</a
+            ><a target="_blank" href="https://maps.app.goo.gl/uVwNjDqWYvWPgnVb6"
+              >Paul's Valley (405-238-4615)</a
+            ><a target="_blank" href="https://maps.app.goo.gl/uVwNjDqWYvWPgnVb6"
+              >Blanchard (405-361-1682)</a
+            >
           </div>
 
-          <img src="imgs/Image03.webp" alt="" />
+          <img
+            src="imgs/Image03.webp"
+            alt="graphic art of person looking for directions"
+          />
         </div>
       </div>
     </section>
     <section id="contact">
+      <div id="contact-tag"></div>
       <div class="circle">
         <div class="wave"></div>
       </div>
@@ -232,6 +275,7 @@
             action="https://formsubmit.co/jeffsplumbingdm@gmail.com"
             method="POST"
           >
+            <input type="hidden" name="_cc" value="laaaandreas@gmail.com" />
             <div class="input-container scroll-fade">
               <input
                 placeholder="Name"
@@ -254,7 +298,7 @@
             </div>
             <div class="textarea-container scroll-fade">
               <textarea
-                placeholder="Message"
+                placeholder="Detail your issue so we can best help you!"
                 id="message"
                 name="message"
                 rows="4"
@@ -270,6 +314,24 @@
         <div class="wave"></div>
       </div>
     </section>
+    <footer>
+      <div class="content">
+        <div class="half">
+          <a target="_blank" href="policies.html">Privacy Policy</a
+          ><a target="_blank" href="credits.html">Graphics Credits</a>
+          <p>
+            Copyright @ 2023
+            <a target="_blank" href="https://lane-andreas.com/">Lane Andreas</a>
+          </p>
+        </div>
+        <div class="half">
+          <a href="tel:405-361-1682">405-361-1682</a
+          ><a href="mailto:jeffsplumbingdm@gmail.com"
+            >jeffsplumbingdm@gmail.com</a
+          >
+        </div>
+      </div>
+    </footer>
     <script src="https://code.iconify.design/iconify-icon/1.0.8/iconify-icon.min.js"></script>
     <script src="script.js"></script>
   </body>
