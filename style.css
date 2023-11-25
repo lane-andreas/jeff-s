@@ -363,7 +363,7 @@ header {
     font-size: var(--m);
   }
   & h4 ~ p {
-    margin-bottom: 7em;
+    margin-bottom: 5em;
     margin-top: 0.25em;
     margin-left: 20ch;
     text-transform: uppercase;
@@ -398,7 +398,7 @@ header {
 }
 
 .circle {
-  clip-path: polygon(0% 30%, 100% 30%, 100% 70%, 0% 70%);
+  clip-path: polygon(0% 20%, 100% 20%, 100% 80%, 0% 80%);
 
   top: 0;
   z-index: -2;

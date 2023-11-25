@@ -27,7 +27,7 @@
     <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png" />
     <link rel="manifest" href="/site.webmanifest" />
     <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5" />
-    <meta name="msapplication-TileColor" content="#000000" />
+    <meta name="msapplication-TileColor" content="#2d89ef" />
     <meta name="theme-color" content="#ffffff" />
   </head>
   <script
@@ -49,10 +49,12 @@
         <a
           href="https://www.facebook.com/profile.php?id=100093981273518"
           target="_blank"
+          aria-label="facebook page"
           ><iconify-icon inline icon="mdi:facebook-box"></iconify-icon></a
         ><a
           href="https://www.instagram.com/jeffsplumbingservice/"
           target="_blank"
+          aria-label="instagram page"
           ><iconify-icon inline icon="uil:instagram-alt"></iconify-icon
         ></a>
       </div>
@@ -283,8 +285,9 @@
                 name="name"
                 id="name"
                 autocomplete="name"
+                aria-label="Enter your name here"
                 required
-              /><label class="name" for="name">Name</label>
+              />
             </div>
             <div class="input-container scroll-fade">
               <input
@@ -293,8 +296,9 @@
                 name="email"
                 id="email"
                 autocomplete="email"
+                aria-label="Enter your email here"
                 required
-              /><label class="form-3" for="email">Email</label>
+              />
             </div>
             <div class="textarea-container scroll-fade">
               <textarea
@@ -302,9 +306,9 @@
                 id="message"
                 name="message"
                 rows="4"
+                aria-label="Detail your issue here so we can best help you!"
                 required
-              ></textarea
-              ><label for="message">Message</label>
+              ></textarea>
             </div>
             <button class="scroll-fade" type="submit">Send</button>
           </form>
