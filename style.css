@@ -632,6 +632,9 @@ header {
     .container > img {
       display: none;
     }
+    & br {
+      display: none;
+    }
   }
   #testimonials {
     margin-top: 10em;
@@ -712,6 +715,9 @@ footer {
       height: unset;
       width: 100vw;
       text-align: right;
+    }
+    .half:nth-of-type(1) {
+      padding-top: 0;
     }
   }
 }
